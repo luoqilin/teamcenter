@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>组队大厅</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+游戏：
+<select id="game_list">
+	<option disabled="disabled" selected="selected" hidden="hidden">请选择</option>
+</select>
+游戏id：<input type="text"/><br/>
+</body>
+<script type="text/javascript">
+	var json = $.parseJSON("result:[{name:'英雄联盟'},{name:'绝地求生'}]");
+	console.log(json[1].name)
+	/* $.post("gameList","",function(data, status){
+		JSON.parse(data);
+	}); */
+
+</script>
+
+</html>
